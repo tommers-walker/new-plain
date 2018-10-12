@@ -1,0 +1,33 @@
+.social {
+  @include list-reset;
+  display: flex;
+  align-items: flex-end;
+}
+
+.social__item {
+  + .social__item {
+    margin-left: rem(20);
+  }
+}
+
+.social__icon {
+  width: rem(24);
+
+  &--email {
+    @include svg-ratio(82, 60);
+  }
+
+  &--facebook {
+    width: rem(10);
+    @include svg-ratio(28, 60);
+  }
+
+  &--twitter {
+    @include svg-ratio(74, 60);
+  }
+
+  &--instagram {
+    width: rem(20);
+    @include svg-ratio(60, 60);
+  }
+}

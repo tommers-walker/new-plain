@@ -1,5 +1,16 @@
-.section {}
+.section {
+  padding-top: $gtr-dbl;
+  padding-bottom: $gtr-dbl;
 
-.section + .section {
-  margin-top: 2rem;
+  .container {
+    @include flow;
+  }
+
+  &--grey {
+    background-color: $grey;
+  }
+}
+
+.section__title {
+  text-transform: uppercase;
 }
