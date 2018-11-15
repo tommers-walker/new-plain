@@ -2,6 +2,21 @@
   <div class="container header__container">
     <a class="header__logo js-header-logo" href="#"><h1>Logo</h1></a>
 
-    {% include "./nav.html" %}
+    <div class="header__container header__container--right js-header-container">
+      {% include "./nav.html" %}
+
+      <form class="search header__search js-nav-item" action="index.html" method="post">
+        <div class="search__container">
+          <input id="search-input" class="search__input input" type="text" name="search" value="" placeholder="Search">
+          <button id="search-btn" type="submit" name="button" class="search__btn btn btn--icon-only">
+            <span>Search</span>
+            <div class="btn__icon btn__icon--search">
+              {% include "svg/icon-search.svg" %}
+            </div>
+          </button>
+        </div>
+      </form>
+    </div>
+
   </div>
 </header>

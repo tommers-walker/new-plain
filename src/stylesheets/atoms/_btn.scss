@@ -9,3 +9,18 @@
   text-transform: uppercase;
   border: none;
 }
+
+.btn--icon-only {
+  @include accessible-btn;
+}
+
+.btn__icon {
+  position: relative;
+  width: 1em;
+  fill: $white;
+}
+
+.btn__icon--search {
+  position: relative;
+  @include svg-ratio(18, 18);
+}

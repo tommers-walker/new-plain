@@ -1,0 +1,20 @@
+.search {
+
+}
+
+.search__container {
+  display: flex;
+}
+
+.search__btn {
+  outline: none;
+}
+
+.search__input {
+  transition: all 0.2s;
+  width: 0;
+
+  &.is-active {
+    width: 12rem;
+  }
+}

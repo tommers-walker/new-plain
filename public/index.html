@@ -17,7 +17,8 @@
   <div class="container header__container">
     <a class="header__logo js-header-logo" href="#"><h1>Logo</h1></a>
 
-    <nav class="nav">
+    <div class="header__container header__container--right js-header-container">
+      <nav class="nav">
   <div class="nav__menu" id="js-nav-menu">
     <ul class="nav__list">
       <li class="nav__item js-nav-item"><a href="#" class="nav__link"><span>About</span></a></li>
@@ -32,6 +33,21 @@
     </span>
   </button>
 </nav>
+
+
+      <form class="search header__search js-nav-item" action="index.html" method="post">
+        <div class="search__container">
+          <input id="search-input" class="search__input input" type="text" name="search" value="" placeholder="Search">
+          <button id="search-btn" type="submit" name="button" class="search__btn btn btn--icon-only">
+            <span>Search</span>
+            <div class="btn__icon btn__icon--search">
+              <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-3 -3)" stroke="#fff" stroke-width="2" fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="6"></circle><path d="M14.412 14.412L20 20" stroke-linecap="round"></path></g></svg>
+
+            </div>
+          </button>
+        </div>
+      </form>
+    </div>
 
   </div>
 </header>
@@ -52,7 +68,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
         <form class="" action="index.html" method="post">
-          <div class="form__item grid grid--a-e">
+          <div class="form__item grid-no-gtr grid-no-gtr--a-st">
             <input class="input col col-m-8" type="email" name="email" value="" placeholder="Enter your email">
             <button type="submit" name="button" class="btn col col-m-4">Sign up</button>
           </div>
