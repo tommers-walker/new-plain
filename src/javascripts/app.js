@@ -1,3 +1,6 @@
+import { button } from './modules/button';
+button.init();
+
 import { menu } from './modules/menu';
 menu.init();
 
