@@ -1,13 +1,10 @@
 .search {
-
-}
-
-.search__container {
   display: flex;
 }
 
 .search__btn {
   outline: none;
+
 }
 
 .search__input {
@@ -15,6 +12,21 @@
   width: 0;
 
   &.is-active {
-    width: 12rem;
+    width: 19em;
   }
+}
+
+.search__container {
+  transition: all 0.2s;
+  width: 0;
+
+  &.is-active {
+    width: rem(220);
+  }
+}
+
+.search__instructions {
+  position: absolute;
+  font-size: 0.75em;
+  font-weight: 600;
 }
