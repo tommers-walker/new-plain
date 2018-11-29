@@ -20,7 +20,7 @@
     opacity: 0;
   }
 
-  @include media($medium-screen-up) {
+  @include media($large-screen-up) {
     display: block;
   }
 }
@@ -31,7 +31,7 @@
   z-index: 1;
   margin-right: -$gtr-half;
 
-  @include media($medium-screen-up) {
+  @include media($large-screen-up) {
     display: none;
   }
 }
@@ -40,7 +40,7 @@
   display: block;
   @include list-reset;
 
-  @include media($medium-screen-up) {
+  @include media($large-screen-up) {
     display: flex;
   }
 }
@@ -49,7 +49,7 @@
   text-transform: uppercase;
   font-weight: 600;
 
-  @include media($medium-screen-up) {
+  @include media($large-screen-up) {
     + .nav__item {
       margin-left: $gtr-half;
     }

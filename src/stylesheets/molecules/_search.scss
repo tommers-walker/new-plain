@@ -8,13 +8,13 @@
 }
 
 .search__input {
-  @include media($medium-screen-down) {
+  @include media($large-screen-down) {
     &::placeholder {
       font-size: 0.8em;
     }
   }
 
-  @include media($medium-screen-up) {
+  @include media($large-screen-up) {
     transition: all 0.2s;
     width: 0;
 

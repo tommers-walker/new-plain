@@ -25,20 +25,20 @@
 }
 
 .header__search {
-  @include media($medium-screen-down) {
+  @include media($large-screen-down) {
     display: none;
 
-    .menu-is-active & {
-      display: inline-flex;
-      position: fixed;
-      top: $mobileHeaderHeight + $gtr;
-      z-index: 1;
-      left: $gtr-half;
-      width: calc(100% - #{$gtr});
-    }
+    // .menu-is-active & {
+    //   display: inline-flex;
+    //   position: fixed;
+    //   top: $mobileHeaderHeight + $gtr;
+    //   z-index: 1;
+    //   left: $gtr-half;
+    //   width: calc(100% - #{$gtr});
+    // }
   }
 
-  @include media($medium-screen-up) {
+  @include media($large-screen-up) {
     margin-left: $gtr-half;
   }
 }

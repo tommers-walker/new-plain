@@ -19,7 +19,7 @@
 }
 
 .btn--sign-up {
-  @include media($medium-screen-up) {
+  @include media($large-screen-up) {
     min-width: 7em;
   }
 }

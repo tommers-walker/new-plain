@@ -2,7 +2,7 @@
   .header-is-fixed & {
     margin-top: $mobileHeaderHeight;
 
-    @include media($medium-screen-up) {
+    @include media($large-screen-up) {
       margin-top: $headerHeight;
     }
   }
