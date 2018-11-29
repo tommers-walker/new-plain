@@ -5,12 +5,20 @@
 .search__btn {
   outline: none;
 
+  @include media($large-screen-down) {
+    background: none;
+    color: $black;
+    border: none;
+  }
 }
 
 .search__input {
   @include media($large-screen-down) {
-    &::placeholder {
-      font-size: 0.8em;
+    width: 0;
+
+    .search-is-active & {
+      transition: all 0.2s;
+      width: 100%;
     }
   }
 
@@ -18,7 +26,7 @@
     transition: all 0.2s;
     width: 0;
 
-    &.is-active {
+    .search-is-active & {
       width: 19em;
     }
   }

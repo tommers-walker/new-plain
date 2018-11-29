@@ -8,7 +8,11 @@ const headerItems = [headerLogo].concat(navItems);
 const animations = {
   headerAnimTl() {
     const headerAnimTl = new TimelineLite({ paused: true });
-    headerAnimTl.staggerFromTo(headerItems, 0.5, {autoAlpha: 0, y: -10}, {autoAlpha: 1, y: 0}, 0.1);
+    headerAnimTl
+      .staggerFromTo(headerItems, 0.5, {autoAlpha: 0, y: -10}, {autoAlpha: 1, y: 0}, 0.1)
+      .call(function() {
+        TweenLite.set(headerItems, {clearProps: 'all'})
+      })
     return headerAnimTl;
   },
 

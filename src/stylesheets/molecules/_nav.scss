@@ -1,6 +1,16 @@
 .nav {
   transition: all 1s;
   position: relative;
+
+  @include media($large-screen-down) {
+    order: 1;
+  }
+
+  .search-is-active & {
+    @include media($large-screen-down) {
+      display: none; 
+    }
+  }
 }
 
 .nav__menu {

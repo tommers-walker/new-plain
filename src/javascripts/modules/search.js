@@ -61,8 +61,8 @@ const searchAnim = () => {
 }
 
 const toggleSearchInput = () => {
-  utils.toggleClass(searchInput, 'is-active')
-  utils.hasClass(searchInput, 'is-active') ? searchInput.focus() : searchInput.blur();
+  utils.toggleClass(document.body, 'search-is-active')
+  utils.hasClass(document.body, 'search-is-active') ? searchInput.focus() : searchInput.blur();
 }
 
 const submitSearch = () => {
@@ -82,7 +82,7 @@ const search = {
     });
 
     document.addEventListener('keydown', function(e) {
-      if (utils.hasClass(searchInput, 'is-active')) {
+      if (utils.hasClass(document.body, 'search-is-active')) {
         if (e.keyCode === enterKeyCode) {
           e.preventDefault();
           // Submit form
