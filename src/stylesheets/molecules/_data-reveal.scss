@@ -1,0 +1,41 @@
+[data-reveal-slide] {
+  .js & {
+    transform-origin: 50% 0%;
+    transform: scale(1.03) translateY(#{rem(24)});
+    opacity: 0;
+    will-change: transform, opacity;
+    transition: all 0.5s $easeOut;
+  }
+
+  &.is-visible {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+[data-reveal-fade],
+[data-reveal-onload] {
+  .js & {
+    opacity: 0;
+    transition: all 0.5s $easeOut;
+  }
+
+  &.is-visible {
+    opacity: 1;
+  }
+}
+
+[data-reveal-group] > * {
+  .js & {
+    transform-origin: 50% 0%;
+    transform: scale(1.03) translateY(#{rem(24)});
+    opacity: 0;
+    will-change: transform, opacity;
+    transition: all 0.5s $easeOut;
+  }
+
+  &.is-visible {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}

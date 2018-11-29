@@ -9,6 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include "shared/app-icons.html" %}
     {% block head %}{% endblock %}
+
+    <script>
+      document.documentElement.classList.remove('no-js');
+      document.documentElement.classList.add('js');
+    </script>
   </head>
   <body>
     <!-- For a fixed header add header-is-fixed class to body -->
