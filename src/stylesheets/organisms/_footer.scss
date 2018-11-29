@@ -7,5 +7,13 @@
 
 .footer__copyright {
   text-transform: uppercase;
-  text-align: right;
+  display: inline-block;
+}
+
+.footer__social {
+  // display: inline-flex;
+}
+
+.footer__row {
+  // display: flex;
 }
