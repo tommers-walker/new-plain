@@ -19,7 +19,9 @@
 }
 
 .btn--sign-up {
-  min-width: 7em;
+  @include media($medium-screen-up) {
+    min-width: 7em;
+  }
 }
 
 .btn--icon-only {
