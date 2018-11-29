@@ -1,0 +1,9 @@
+.main {
+  .header-is-fixed & {
+    margin-top: $mobileHeaderHeight;
+
+    @include media($medium-screen-up) {
+      margin-top: $headerHeight;
+    }
+  }
+}

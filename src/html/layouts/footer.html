@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="container">
-    <div class="grid">
-      <div class="col col-s-6">
+    <div class="grid grid--a-e">
+      <div class="footer__details col col-s-6">
         <ul class="footer__social social">
           <li class="social__item">
             <a class="social__link" href="#">
@@ -22,15 +22,20 @@
           </li>
         </ul>
 
-        <h5 class="footer__copyright">&copy;&nbsp;2018 Company</h5>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Cookies</a>
+        <div class="footer__meta">
+          <p class="footer__email">Email us at: <a class="footer__link" href="mailto:hello@example.com">hello@example.com</a></p>
+          <span class="footer__copyright">&copy;&nbsp;2018 Company</span>
+          <span>|</span>
+          <a class="footer__link" href="#">Privacy Policy</a>
+          <span>|</span>
+          <a class="footer__link" href="#">Cookies</a>
+        </div>
       </div>
 
       <form class="col col-s-6">
         <div class="form__item grid-no-gtr grid-no-gtr--a-st">
-          <input class="input col col-m-8" type="email" name="email" value="" placeholder="Enter your email">
-          <button type="submit" name="button" class="btn col col-m-4">Sign up</button>
+          <input class="input col-m-8" type="email" name="email" value="" placeholder="Enter your email">
+          <button type="submit" name="button" class="btn btn--sign-up col-m-4">Sign up</button>
         </div>
       </form>
     </div>

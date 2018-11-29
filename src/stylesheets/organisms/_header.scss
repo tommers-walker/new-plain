@@ -1,7 +1,14 @@
 .header {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: $gtr-half;
+  padding-bottom: $gtr-half;
   background-color: $grey;
+
+  .header-is-fixed & {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 }
 
 .header__container {
@@ -18,5 +25,20 @@
 }
 
 .header__search {
-  margin-left: 1rem;
+  @include media($medium-screen-down) {
+    display: none;
+
+    .menu-is-active & {
+      display: inline-flex;
+      position: fixed;
+      top: $mobileHeaderHeight + $gtr;
+      z-index: 1;
+      left: $gtr-half;
+      width: calc(100% - #{$gtr});
+    }
+  }
+
+  @include media($medium-screen-up) {
+    margin-left: $gtr-half;
+  }
 }

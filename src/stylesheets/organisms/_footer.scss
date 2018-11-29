@@ -1,19 +1,21 @@
 .footer {
   background-color: $grey;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: $gtr;
+  padding-bottom: $gtr;
   margin-top: auto;
 }
 
 .footer__copyright {
+  font-weight: 600;
   text-transform: uppercase;
   display: inline-block;
 }
 
-.footer__social {
-  // display: inline-flex;
+.footer__details {
+  @include flow;
+  font-size: 0.9em;
 }
 
-.footer__row {
-  // display: flex;
+.footer__link {
+  text-decoration: none;
 }

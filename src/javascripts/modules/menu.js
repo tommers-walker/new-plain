@@ -23,6 +23,7 @@ const menu = {
   init() {
     menuBtn.addEventListener('click', (e) => {
       utils.toggleClass(menuBtn, 'is-active');
+      utils.toggleClass(document.body, 'menu-is-active');
       toggleMenu();
     });
   }

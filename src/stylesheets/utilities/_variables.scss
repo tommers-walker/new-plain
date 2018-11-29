@@ -4,7 +4,7 @@ $ff-primary: 'Montserrat', sans-serif;
 // Colors
 $black: #000;
 $white: #FFF;
-$grey: rgba($black, 0.05);
+$grey: lighten($black, 95%);
 $body-text: $black;
 
 // Layout
@@ -17,3 +17,6 @@ $gtr-half  : $gtr / 2;
 $gtr-dbl   : $gtr * 2;
 $cols      : 12;
 $max-width : rem(1440);
+
+$mobileHeaderHeight: rem(87);
+$headerHeight: rem(90);

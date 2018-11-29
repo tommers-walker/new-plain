@@ -8,20 +8,19 @@
 }
 
 .search__input {
-  transition: all 0.2s;
-  width: 0;
-
-  &.is-active {
-    width: 19em;
+  @include media($medium-screen-down) {
+    &::placeholder {
+      font-size: 0.8em;
+    }
   }
-}
 
-.search__container {
-  transition: all 0.2s;
-  width: 0;
+  @include media($medium-screen-up) {
+    transition: all 0.2s;
+    width: 0;
 
-  &.is-active {
-    width: rem(220);
+    &.is-active {
+      width: 19em;
+    }
   }
 }
 
