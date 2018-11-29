@@ -12,6 +12,12 @@ const toggleMenu = () => {
     const reverseTl = animations.mobileMenuTl();
 
     reverseTl.eventCallback("onReverseComplete", () => {
+      const childTweens = reverseTl.getChildren();
+      utils.forEach(childTweens, (index, childTween) => {
+        if (childTween.target) {
+          TweenLite.set(childTween.target, {clearProps: 'all'})
+        }
+      })
       utils.removeClass(navMenu, 'is-active');
     });
 
